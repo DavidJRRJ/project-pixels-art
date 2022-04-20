@@ -2,6 +2,7 @@ let red = document.querySelector('#red');
 let black = document.querySelector('#black');
 let green = document.querySelector('#green');
 let blue = document.querySelector('#blue');
+let clear = document.querySelector('#clear-board');
 
 let box = document.querySelectorAll('.pixel');
 
@@ -12,6 +13,10 @@ for (let i = 0; i < box.length; i++){
     else if (sessionStorage.getItem('cor') === 'green') box[i].style.backgroundColor = 'green';
     else if (sessionStorage.getItem('cor') === 'blue') box[i].style.backgroundColor = 'blue';
 })
+}
+
+window.onload = function() {
+  sessionStorage.setItem('cor', 'black');
 }
 
 red.addEventListener('click', function(){
@@ -28,4 +33,10 @@ green.addEventListener('click', function(){
 
 blue.addEventListener('click', function(){
   sessionStorage.setItem('cor', 'blue');
+})
+
+clear.addEventListener('click', function(){
+  for (let j = 0; j < box.length; j++){
+    box[j].style.backgroundColor = 'white';
+  }
 })
