@@ -3,6 +3,8 @@ let black = document.querySelector('#black');
 let green = document.querySelector('#green');
 let blue = document.querySelector('#blue');
 let clear = document.querySelector('#clear-board');
+let vqv = document.querySelector('#generate-board');
+let size = document.querySelector('#board-size');
 
 let box = document.querySelectorAll('.pixel');
 
@@ -66,3 +68,6 @@ clear.addEventListener('click', function(){
   }
   // sessionStorage.setItem('cor', 'white');
 })
+
+
+
