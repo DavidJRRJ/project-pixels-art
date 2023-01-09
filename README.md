@@ -1,6 +1,6 @@
 Este projeto contém os requisitos realizados por _[David Junior](https://www.linkedin.com/in/davidjrrj/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
-# Projeto Lista de Tarefas
+# Projeto Pixels Art
 
 Uma página web que contém uma paleta de cores funcional que poderá ser utilizada para criar desenhos em pixels.
 
